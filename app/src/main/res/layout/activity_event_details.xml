@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.EventDetailsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/eventToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:id="@+id/backToSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/green_back_btn" />
+
+            <TextView
+                android:layout_toRightOf="@+id/backToSearch"
+                android:layout_centerVertical="true"
+                android:id="@+id/eventName"
+                android:layout_marginStart="10dp"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:singleLine="true"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="-1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <LinearLayout
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/eventName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/facebook"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/twitter"
+                    android:layout_toRightOf="@+id/fb"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/twitter"
+                    android:scaleType="fitCenter"/>
+
+                <ImageButton
+                    android:layout_weight="1"
+                    android:id="@+id/eventFav"
+                    android:layout_toRightOf="@+id/twitter"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/favorite_border_24" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/event_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eventToolbar"
+        android:background="@color/tab_layout_bg"
+        app:tabIndicatorColor="@color/toolbar_text"
+        app:tabTextColor="@color/white"
+        app:tabSelectedTextColor="@color/toolbar_text" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/event_view_pager"
+        android:layout_below="@id/event_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

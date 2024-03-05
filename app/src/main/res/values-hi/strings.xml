@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">घटना खोजक</string>
+    <string name="email">ईमेल</string>
+    <string name="pass">पासवर्ड</string>
+    <string name="login">लॉग इन करें</string>
+    <string name="register">पंजीकरण करवाना</string>
+    <string name="acc">खाता नहीं है? </string>
+    <string name="change_language">भाषा बदलें</string>
+</resources>

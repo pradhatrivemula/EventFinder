@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Buscador de eventos</string>
+    <string name="email">Correo electrónico</string>
+    <string name="pass">Contraseña</string>
+    <string name="login">Acceso</string>
+    <string name="register">Registro</string>
+    <string name="acc">¿No tienes una cuenta? </string>
+    <string name="change_language">Cambiar idioma</string>
+</resources>

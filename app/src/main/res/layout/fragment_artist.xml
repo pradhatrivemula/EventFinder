@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/artistRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"/>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/no_artists"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/noresults_rounded_corner"
+        android:layout_centerInParent="true"
+        android:textColor="@color/toolbar_text"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Artist/Music data unavailable"/>
+
+</RelativeLayout>
